@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Training and evaluation outputs
+model_output*/
+checkpoint-*/
+results/
+wandb/
+runs/
+outputs/
+logs/
+
+# Model and optimizer artifacts
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.onnx
+*.engine
+*.npz
+
+# Dataset/media artifacts
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.npy
+*.h5
+*.hdf5
+
+# Large/local packages
+*.whl
+*.tar.gz
+*.zip
+
+# Local editor/system files
+.DS_Store
+.idea/
+.vscode/
+=10.1
