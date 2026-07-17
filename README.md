@@ -1,5 +1,7 @@
 # LLaVA-Assessor
 
+**Model weights: https://huggingface.co/JZHWS/Llava-Assessor-GIGA-7B**
+
 This repository contains the training and evaluation code used for the LLaVA-Assessor video/image quality assessment workflows. It is organized as three self-contained code snapshots:
 
 - `training/foundation`: foundation-model fine-tuning code copied from `train_foundation`.
@@ -143,14 +145,3 @@ Additional entry points include:
 
 As with scoring, the benchmark JSON files and media roots are not committed. Update the hard-coded local paths in the scripts before running them in a new environment.
 
-## Files Not Included
-
-The following classes of files were deliberately excluded:
-
-- Model checkpoints and generated model directories: `model_output*`, `checkpoint-*`, `*.safetensors`, `*.pth`, `*.pt`, `*.bin`.
-- Dataset and benchmark annotation dumps from the source environment.
-- Evaluation result files under `results/`.
-- Local media examples such as `*.mp4`, `*.jpg`, `*.png`.
-- Environment-specific binary wheels such as `flash_attn*.whl`.
-
-Keep these files in external storage and reference them with local paths when launching training or evaluation.
